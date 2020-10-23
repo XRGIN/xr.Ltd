@@ -10,7 +10,12 @@
   <title>Dashboard Template · Bootstrap</title>
 
   <link rel="canonical" href="https://v5.getbootstrap.com/docs/5.0/examples/dashboard/">
-
+  <script language="javascript">
+    function reSize(){
+    　　parent.document.all.frameid.height=document.body.scrollHeight; 
+    } 
+    window.onload=reSize;
+    </script>
 
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
@@ -244,25 +249,25 @@
             </button>
           </div>
         </div>
-
+        <iframe src="componyDashboard/dashboard.html" frameborder="0" style="height: 400px;width: 600px;"></iframe>
         <canvas class="my-4 w-100" id="myChart" width="900" height="380"></canvas>
 
-        <h2>Section title</h2>
-        <div class="table-responsive">
+        <h2 style="position: absolute;top: 520px;">Section title</h2>
+        <div class="table-responsive" style="position: absolute;top: 550px;height: 550px;width: 700px;">
           <table class="table table-striped table-sm">
             <thead>
               <tr>
                 <th>#</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
-                <th>Header</th>
+                <th>USD $</th>
+                <th>CHF Fr</th>
+                <th>SEK kr</th>
+                <th>MXN $</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>1,001</td>
-                <td>Lorem</td>
+                <td>charger</td>
                 <td>ipsum</td>
                 <td>dolor</td>
                 <td>sit</td>
