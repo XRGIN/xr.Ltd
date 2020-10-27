@@ -1,4 +1,4 @@
-!<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
@@ -406,10 +406,23 @@
         <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a
                 href="https://twitter.com/mdo">@mdo</a>.</p>
         <p>
-            <a href="#">Back to top</a>
+            <a href="wall.html#" class="a">Back to top</a>
         </p>
     </footer>
+<script>
 
+    jQuery(document).ready(function( $ ) {
+
+        // Go to top
+        $('.a').on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop : 0},500);
+        });
+      });
+
+
+(jQuery);
+</script>
 
 
 </body>
